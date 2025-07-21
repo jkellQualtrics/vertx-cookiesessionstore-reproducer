@@ -16,3 +16,5 @@ CookieSessionStore Reproducer
 7. Receive another 200 with a set-cookie
 8. Attempt to call GET http://localhost:8080/private/whoami
 9. Receive a 200 with a response
+10. Change to `LocalSessionStore` by switching lines 28/29 in the `MainVerticle`
+11. Authentication now works as expected with only one call needed to authenticate.
